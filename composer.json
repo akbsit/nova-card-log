@@ -1,0 +1,33 @@
+{
+    "name": "falbar/nova-card-log",
+    "description": "Cleaning application log files from laravel nova dashboard card.",
+    "keywords": [
+        "laravel",
+        "nova",
+        "logs"
+    ],
+    "homepage": "http://falbar.ru/",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4",
+        "laravel/framework": "^7.0",
+        "laravel/nova": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Falbar\\NovaCardLog\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Falbar\\NovaCardLog\\CardServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
