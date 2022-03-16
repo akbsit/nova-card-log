@@ -24,7 +24,7 @@ class NovaCardLog extends Card
     private function setComponentMeta()
     {
         return $this->withMeta([
-            'size' => LogHelper::getTotalSize(),
+            'size' => LogHelper::make()->getTotalSizeFormatted(),
         ]);
     }
 }

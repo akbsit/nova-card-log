@@ -7,3 +7,19 @@
 ```bash
 composer require falbar/nova-card-log
 ```
+
+## Подключение
+
+Подключить в `NovaServiceProvider`:
+
+```php
+use Falbar\NovaCardLog\NovaCardLog;
+
+protected function cards()
+{
+    return [
+        NovaCardLog::make(),
+        ...
+    ];
+}
+```
