@@ -1,16 +1,16 @@
 # nova-card-log, [Packagist](https://packagist.org/packages/falbar/nova-card-log), [Nova packages](https://novapackages.com/packages/falbar/nova-card-log)
 
-## Установка
+## Install
 
-Для установки пакета нужно:
+To install package, you need run command:
 
 ```bash
 composer require falbar/nova-card-log
 ```
 
-## Подключение
+## Usage
 
-Подключить в `NovaServiceProvider`:
+Add the card tools to your `NovaServiceProvider`:
 
 ```php
 use Falbar\NovaCardLog\NovaCardLog;
