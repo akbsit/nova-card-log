@@ -6,17 +6,8 @@ use Illuminate\Support\Facades\Route;
 use Laravel\Nova\Events\ServingNova;
 use Laravel\Nova\Nova;
 
-/**
- * Class CardServiceProvider
- * @package Falbar\NovaCardLog
- */
 class CardServiceProvider extends ServiceProvider
 {
-    /**
-     * Bootstrap any application services
-     *
-     * @return void
-     */
     public function boot()
     {
         $this->app->booted(function () {
@@ -25,14 +16,10 @@ class CardServiceProvider extends ServiceProvider
 
         Nova::serving(function (ServingNova $oEvent) {
             Nova::script('nova-card-log', __DIR__ . '/../dist/js/card.js');
+            Nova::style('nova-card-log', __DIR__ . '/../dist/css/card.css');
         });
     }
 
-    /**
-     * Register the card's routes
-     *
-     * @return void
-     */
     protected function routes()
     {
         if ($this->app->routesAreCached()) {

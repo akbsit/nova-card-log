@@ -3,27 +3,20 @@
 use Falbar\NovaCardLog\Helper\LogHelper;
 use Laravel\Nova\Card;
 
-/**
- * Class NovaCardLog
- * @package Falbar\NovaCardLog
- */
 class NovaCardLog extends Card
 {
-    /* @inheritDoc */
     public $width = '1/3';
 
-    /* @inheritDoc */
-    public function component()
+    public function component(): string
     {
         $this->setComponentMeta();
 
         return 'nova-card-log';
     }
 
-    /* @return NovaCardLog */
-    private function setComponentMeta()
+    private function setComponentMeta(): void
     {
-        return $this->withMeta([
+        $this->withMeta([
             'size' => LogHelper::make()->getTotalSizeFormatted(),
         ]);
     }

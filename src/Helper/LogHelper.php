@@ -2,21 +2,15 @@
 
 use Illuminate\Support\Facades\File;
 
-/**
- * Class LogHelper
- * @package Falbar\NovaCardLog\Helper
- */
 class LogHelper
 {
     private const BASE_DIR = 'logs';
 
-    /* @return static */
     public static function make(): self
     {
         return new static();
     }
 
-    /* @return int */
     public function getTotalSize(): int
     {
         $iResult = 0;
@@ -38,13 +32,11 @@ class LogHelper
         return $iResult;
     }
 
-    /* @return string */
     public function getTotalSizeFormatted(): string
     {
         return FileHelper::formatBytes($this->getTotalSize());
     }
 
-    /* @return void */
     public function deleteAll(): void
     {
         $sStoragePath = storage_path(self::BASE_DIR);
