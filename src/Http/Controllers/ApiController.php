@@ -1,9 +1,9 @@
-<?php namespace Falbar\NovaCardLog\Http\Controllers;
+<?php namespace Akbsit\NovaCardLog\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 use Illuminate\Http\JsonResponse;
 
-use Falbar\NovaCardLog\Helper\LogHelper;
+use Akbsit\NovaCardLog\Helper\LogHelper;
 
 class ApiController extends Controller
 {

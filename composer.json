@@ -1,5 +1,5 @@
 {
-  "name": "falbar/nova-card-log",
+  "name": "akbsit/nova-card-log",
   "description": "Cleaning application log files from laravel nova dashboard card.",
   "keywords": [
     "laravel",
@@ -7,7 +7,6 @@
     "files",
     "logs"
   ],
-  "homepage": "http://falbar.ru/",
   "license": "MIT",
   "require": {
     "php": "^8.1",
@@ -16,13 +15,13 @@
   },
   "autoload": {
     "psr-4": {
-      "Falbar\\NovaCardLog\\": "src/"
+      "Akbsit\\NovaCardLog\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Falbar\\NovaCardLog\\CardServiceProvider"
+        "Akbsit\\NovaCardLog\\CardServiceProvider"
       ]
     }
   },

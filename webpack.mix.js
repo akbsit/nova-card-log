@@ -9,4 +9,4 @@ mix.setPublicPath('dist')
   .postCss('resources/css/card.css', 'css', [
     tailwindcss
   ])
-  .nova('falbar/nova-card-log');
+  .nova('akbsit/nova-card-log');

@@ -1,6 +1,6 @@
-<?php namespace Falbar\NovaCardLog;
+<?php namespace Akbsit\NovaCardLog;
 
-use Falbar\NovaCardLog\Helper\LogHelper;
+use Akbsit\NovaCardLog\Helper\LogHelper;
 use Laravel\Nova\Card;
 
 class NovaCardLog extends Card

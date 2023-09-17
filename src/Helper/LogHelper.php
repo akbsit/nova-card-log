@@ -1,4 +1,4 @@
-<?php namespace Falbar\NovaCardLog\Helper;
+<?php namespace Akbsit\NovaCardLog\Helper;
 
 use Illuminate\Support\Facades\File;
 

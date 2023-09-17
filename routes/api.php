@@ -1,6 +1,6 @@
 <?php
 
-use Falbar\NovaCardLog\Http\Controllers\ApiController;
+use Akbsit\NovaCardLog\Http\Controllers\ApiController;
 use Illuminate\Support\Facades\Route;
 
 /*

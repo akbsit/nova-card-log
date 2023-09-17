@@ -1,4 +1,4 @@
-<?php namespace Falbar\NovaCardLog;
+<?php namespace Akbsit\NovaCardLog;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;

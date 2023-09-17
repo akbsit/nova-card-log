@@ -1,11 +1,11 @@
-# nova-card-log, [Packagist](https://packagist.org/packages/falbar/nova-card-log), [Nova packages](https://novapackages.com/packages/falbar/nova-card-log)
+# nova-card-log, [Packagist](https://packagist.org/packages/akbsit/nova-card-log), [Nova packages](https://novapackages.com/packages/akbsit/nova-card-log)
 
 ## Install
 
 To install package, you need run command:
 
 ```bash
-composer require falbar/nova-card-log
+composer require akbsit/nova-card-log
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ composer require falbar/nova-card-log
 Add the card tools to your dashboard:
 
 ```php
-use Falbar\NovaCardLog\NovaCardLog;
+use Akbsit\NovaCardLog\NovaCardLog;
 
 protected function cards()
 {
